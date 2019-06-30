@@ -1,0 +1,15 @@
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.dll.config
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.deps.json
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.runtimeconfig.json
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.runtimeconfig.dev.json
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.dll
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\bin\Debug\netcoreapp2.2\webApiDemo.pdb
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.csprojAssemblyReference.cache
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.csproj.CoreCompileInputs.cache
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.RazorAssemblyInfo.cache
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.RazorAssemblyInfo.cs
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.AssemblyInfoInputs.cache
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.AssemblyInfo.cs
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.RazorTargetAssemblyInfo.cache
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.dll
+C:\Users\luxuda\workspace\C#Code\NetCoreDemo\webApiDemo\obj\Debug\netcoreapp2.2\webApiDemo.pdb
