@@ -12,12 +12,12 @@ namespace webApiDemo.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly ApiDBContent _dbContext;
-
-        public ValuesController(ApiDBContent dbContext)
-        {
-            _dbContext = dbContext;
-        }
+//        private readonly ApiDBContent _dbContext;
+//
+//        public ValuesController(ApiDBContent dbContext)
+//        {
+//            _dbContext = dbContext;
+//        }
 
         // GET api/values
         [HttpGet]
@@ -34,12 +34,10 @@ namespace webApiDemo.Controllers
         }
 
         // POST api/values
-        [HttpPost]
-        public ActionResult<Object> Post([FromBody] Car car)
+        [HttpPost("xuda")]
+        public ActionResult<Object> Post([FromServices] ApiDBContent _dbContext  ,[FromBody] Car car)
         {
-             //var row1 = _dbContext.Cars.FromSqlRaw("sp_queryCar 0 ,'Homda' ").ToList();
-
-             var name = "Homda";
+            var name = "Homda";
              var isNeedData = 1;
              var row2 = _dbContext.Database.SqlQuery<Car>(@" exec sp_queryCar 1 ,'Homda'");
              
@@ -47,32 +45,32 @@ namespace webApiDemo.Controllers
         }
 
 
-        // DELETE api/values/5
-        [HttpDelete("xuda/{id}")]
-        public ActionResult<Object> Delete(int id)
-        {
-            var entityEntry = _dbContext.Cars.Remove(new Car {Id = id});
-            return _dbContext.SaveChanges();
-        }
-
-        [HttpPut("xuda")]
-        public ActionResult<Object> CreateNewCar([FromBody] Car car)
-        {
-            _dbContext.Cars.Add(new Car
-            {
-                Name = car.Name,
-                Brand = "BMW",
-                Model = "car3"
-            });
-            var changes = _dbContext.SaveChanges();
-            Console.WriteLine(changes);
-            return _dbContext.Cars.Where(x => x.Name == "320").ToList();
-        }
-
-        [HttpGet("xuda/{id}")]
-        public ActionResult<Object> GetDataFromDd([FromRoute] int id)
-        {
-            return _dbContext.Cars.Take(2).ToList();
-        }
+//        // DELETE api/values/5
+//        [HttpDelete("xuda/{id}")]
+//        public ActionResult<Object> Delete(int id)
+//        {
+//            var entityEntry = _dbContext.Cars.Remove(new Car {Id = id});
+//            return _dbContext.SaveChanges();
+//        }
+//
+//        [HttpPut("xuda")]
+//        public ActionResult<Object> CreateNewCar([FromBody] Car car)
+//        {
+//            _dbContext.Cars.Add(new Car
+//            {
+//                Name = car.Name,
+//                Brand = "BMW",
+//                Model = "car3"
+//            });
+//            var changes = _dbContext.SaveChanges();
+//            Console.WriteLine(changes);
+//            return _dbContext.Cars.Where(x => x.Name == "320").ToList();
+//        }
+//
+//        [HttpGet("xuda/{id}")]
+//        public ActionResult<Object> GetDataFromDd([FromRoute] int id)
+//        {
+//            return _dbContext.Cars.Take(2).ToList();
+//        }
     }
 }
